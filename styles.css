@@ -1,0 +1,186 @@
+/* Підключення Google Fonts для шрифтів */
+
+html {
+    background-image: url(library.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+img.Book {
+    overflow: hidden;
+    height: 56.6px;
+}
+
+h1 {
+    width: 320px;
+    font-size: 80px;
+    font-family: Jaro;
+    color: #366038;
+    text-align: center;
+    display: inline-block;
+    height: 100px;
+}
+
+.background-container {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-container1 {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.overlay1 {
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    font-family: Kavoon;
+    
+}
+
+.search-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.search-item {
+    flex: 1;
+    min-width: 300px;
+    color: #4A824D;
+    font-family: Kavoon;
+-webkit-text-stroke: 0.1px #ffffff;
+text-align: center;
+    margin: 20px 0;
+}
+
+
+input[type="text"],
+input[type="number"],
+button {
+    padding: 10px;
+    margin: 5px 0;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+    font-family: Kavoon;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+#status-message {
+    margin: 10px 0;
+    color: #28a745;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+li:hover {
+    transform: scale(1.02);
+}
+
+.button-container {
+    margin: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.filter-button {
+    
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.filter-button:hover {
+    background-color: #45a049;
+}
+
+.background-container2 {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    
+}
+
+.overlay2 {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: Kavoon;
+}
+
+.genre-info {
+    text-align: left;
+    margin-top: 20px;
+}
+
