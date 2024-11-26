@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jaro:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kavoon:wght@400;700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Library</title>
+</head>
+
+<body>
+
+    <div class="background-container">
+        <div class="overlay">
+            <div>
+                <img src="Book.png" class="Book">
+                <h1>Bookshelf</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="search-container">
+        <div class="search-item">
+            <h2>Search for a book</h2>
+            <input type="text" id="search-query" placeholder="Enter book title">
+            <button id="search-button">Search</button>
+        </div>
+        <div class="search-item">
+            <h2>Search by Genre</h2>
+            <input type="text" id="searchByGenre" placeholder="Enter genre">
+            <button id="genre-search-button">Search by Genre</button>
+        </div>
+    </div>
+
+    <!-- Форма додавання нової книги -->
+<div class="background-container2">
+    <div class="overlay2">
+        <!-- Форма додавання нової книги -->
+        <h2>Add a new book</h2>
+        <form id="add-book-form">
+            <input type="text" id="title" placeholder="Title" required>
+            <input type="text" id="author_id" placeholder="Author ID" required>
+            <input type="text" id="genre_id" placeholder="Genre" required>
+            <input type="number" id="year" placeholder="Year" required>
+            <input type="text" id="description" placeholder="Description" required>
+            <input type="text" id="location" placeholder="Location" required>
+            <button type="submit">Add Book</button>
+        </form>
+
+        <!-- Секція жанрів -->
+        <div class="genre-info">
+            <h2>Genre</h2>
+            <h3>
+                "1" - Novel<br>
+                "2" - Fantasy<br>
+                "3" - Mystery<br>
+                "4" - Science fiction<br>
+                "5" - Horror<br>
+                "6" - Literary fiction<br>
+                "7" - Historical fiction<br>
+            </h3>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Список книг -->
+    <h2  class="search-item">Book List</h2>
+    <ul id="book-list"></ul>
+
+    <!-- Повідомлення про стан -->
+    <div id="status-message"></div>
+
+</body>
+
+</html>
